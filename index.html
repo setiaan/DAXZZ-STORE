@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pembayaran</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f4f4f4;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      margin: 100px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Pembayaran DANA</h2>
+  <p>Nomor:</p>
+  <h3 id="nomor">085785247231</h3>
+
+  <button onclick="copyText()">Copy Nomor</button>
+
+  <p>Setelah transfer, kirim bukti ya 🙏</p>
+</div>
+
+<script>
+function copyText() {
+  var text = document.getElementById("nomor").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Nomor berhasil disalin!");
+}
+</script>
+
+</body>
+</html>
