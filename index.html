@@ -10,6 +10,8 @@
             background-color: #1E1E1E;
             color: white;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
         .container {
             background-color: #333;
@@ -25,17 +27,16 @@
         }
         .payment-method {
             font-size: 20px;
-            margin: 10px 0;
+            margin: 20px 0;
         }
         .qr-container img {
             max-width: 100%;
             border-radius: 10px;
-            margin: 20px 0;
         }
         button {
             background-color: #007BFF;
             color: white;
-            padding: 10px;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -44,18 +45,25 @@
         button:hover {
             background-color: #0056b3;
         }
+        .footer {
+            margin-top: 30px;
+        }
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1 class="title">Pembayaran</h1>
         <p class="payment-method">QRIS</p>
-        
+
         <div class="qr-container">
-            <!-- Link yang membuat QRIS bisa diklik dan membuka halaman -->
-            <a href="https://paymentabzy.vercel.app" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/QRIS_Payment_Logo.svg/1024px-QRIS_Payment_Logo.svg.png" alt="QRIS" />
-            </a>
+            <!-- Ganti dengan gambar QRIS yang sesuai -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/QRIS_Payment_Logo.svg/1024px-QRIS_Payment_Logo.svg.png" alt="QRIS">
         </div>
 
         <p class="payment-method">DANA</p>
@@ -63,7 +71,15 @@
 
         <!-- Tombol untuk menyalin nomor -->
         <button onclick="copyText()">Salin Nomor</button>
+
         <p>Setelah transfer, kirim bukti ya 🙏</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 DAXZZ STORE</p>
+        <a href="https://wa.me/085785247231" target="_blank">Whatsapp</a>
+        <a href="https://instagram.com/daxzzstore" target="_blank">Instagram</a>
+        <a href="https://t.me/daxzzstore" target="_blank">Telegram</a>
     </div>
 
     <script>
@@ -74,5 +90,6 @@
             alert("Nomor berhasil disalin!");
         }
     </script>
+
 </body>
 </html>
