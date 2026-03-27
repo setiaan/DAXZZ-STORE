@@ -11,8 +11,12 @@
     .box {
       background: white;
       padding: 20px;
-      margin: 100px auto;
+      margin: 50px auto;
       width: 300px;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
       border-radius: 10px;
     }
     button {
@@ -21,16 +25,22 @@
       color: white;
       border: none;
       border-radius: 5px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
 <div class="box">
-  <h2>Pembayaran DANA</h2>
-  <p>Nomor:</p>
-  <h3 id="nomor">085785247231</h3>
+  <h2>Pembayaran</h2>
 
+  <h3>QRIS</h3>
+  <img src="qris.jpg">
+
+  <hr>
+
+  <h3>DANA</h3>
+  <p id="nomor">085785247231</p>
   <button onclick="copyText()">Copy Nomor</button>
 
   <p>Setelah transfer, kirim bukti ya 🙏</p>
